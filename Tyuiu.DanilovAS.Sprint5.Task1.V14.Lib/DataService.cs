@@ -22,7 +22,7 @@ namespace Tyuiu.DanilovAS.Sprint5.Task1.V14.Lib
 
             for (double x = startValue; x <= stopValue; x++)
             {
-                result = (Math.Sin(x)) / (x + 1.7) - Math.Cos(x) * 4 * x - 6;
+                result = Math.Round((Math.Sin(x)) / (x + 1.7) - Math.Cos(x) * 4 * x - 6,2);
                 strResult = Convert.ToString(result);
 
                 if (x != stopValue)
