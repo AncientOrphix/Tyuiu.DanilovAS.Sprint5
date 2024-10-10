@@ -34,19 +34,19 @@ namespace Tyuiu.DanilovAS.Sprint5.Task2.V9.Lib
 
             for(int i = 0; i < rows; i++)
             {
-                for(int j = 0; j<columns; j++)
+                for (int j = 0; j < columns; j++)
                 {
-                    if(j!= columns - 1)
+                    if (j != columns - 1)
                     {
-                        str = str + matrix[i,j] + " ; ";
+                        str = str + matrix[i, j] + ";";
                     }
                     else
                     {
                         str = str + matrix[i, j];
                     }
+                }
 
-
-                    if (i != rows -1)
+                    if (i != rows - 1)
                     {
                         File.AppendAllText(path, str + Environment.NewLine);
                     }
@@ -55,7 +55,7 @@ namespace Tyuiu.DanilovAS.Sprint5.Task2.V9.Lib
                         File.AppendAllText(path, str);
                     }
                     str = "";
-                }
+                
             }
             return path;
         }
