@@ -6,7 +6,8 @@ namespace Tyuiu.DanilovAS.Sprint5.Task1.V14.Lib
     {
         public string SaveToFileTextData(int startValue, int stopValue)
         {
-            string path = $@"{Path.Combine("OutPutFileTask1.txt")}";
+            //string path = $@"{Path.Combine("OutPutFileTask1.txt")}";
+            string path = $@"{Path.GetTempPath()}\OutPutFileTask1.txt";
 
             FileInfo fileInfo = new FileInfo(path);
             bool fileExists = fileInfo.Exists;
