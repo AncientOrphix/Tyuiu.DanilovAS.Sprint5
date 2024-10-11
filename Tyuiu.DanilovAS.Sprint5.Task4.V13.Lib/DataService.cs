@@ -8,6 +8,7 @@ namespace Tyuiu.DanilovAS.Sprint5.Task4.V13.Lib
         {
             string strX = File.ReadAllText(path);
             double res = Math.Cos(Convert.ToDouble(strX) + (Math.Pow(Convert.ToDouble(strX), 2)) / 2);
+            res = Math.Round(res, 3);
             return res;
         }
     }
