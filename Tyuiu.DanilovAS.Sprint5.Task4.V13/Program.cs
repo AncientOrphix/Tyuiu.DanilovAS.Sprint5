@@ -23,7 +23,7 @@ namespace Tyuiu.DanilovAS.Sprint5.Task4.V13
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
-            Console.WriteLine("*                                                                         *");
+            Console.WriteLine("* path = С:\\DataSprint5\\InPutDataFileTask4V0.txt                        *");
             Console.WriteLine("***************************************************************************");
 
             string path = @"С:\DataSprint5\InPutDataFileTask4V0.txt";
