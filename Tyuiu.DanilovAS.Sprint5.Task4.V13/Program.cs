@@ -26,7 +26,7 @@ namespace Tyuiu.DanilovAS.Sprint5.Task4.V13
             Console.WriteLine("* path = С:\\DataSprint5\\InPutDataFileTask4V0.txt                        *");
             Console.WriteLine("***************************************************************************");
 
-            string path = @"С:\DataSprint5\InPutDataFileTask4V0.txt";
+            string path = @"С:\DataSprint5\InPutDataFileTask4V13.txt";
             Console.WriteLine($"Данные находятся в файле {path}");
 
             Console.WriteLine();
