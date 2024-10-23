@@ -10,15 +10,13 @@ namespace Tyuiu.DanilovAS.Sprint5.Task6.V2.Lib
             using (StreamReader reader = new StreamReader(path))
             {
                 string line;
-                 
+                
                 while ((line = reader.ReadLine()) != null)
                 {
-                    line = line.ToUpper();
                     for(int i = 0; i < line.Length; i++)
                     {
-                        char c = line[i];
                         //string russian = @"^[А-Яа-яЁё]+$";
-                        if ((c >= 'A') || (c <= 'Я'))
+                        if ((line[i] >='A') && (line[i] <='я') || line[i]=='Ё' || line[i]=='ё')
                         {
                             count++;
                         }
