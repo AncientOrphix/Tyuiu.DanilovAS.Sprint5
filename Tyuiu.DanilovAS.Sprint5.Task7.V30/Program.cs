@@ -24,9 +24,7 @@ namespace Tyuiu.DanilovAS.Sprint5.Task7.V30
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("***************************************************************************");
 
-            string path = @"С:\DataSprint5\InPutDataFileTask7V30.txt";
-            string pathSaveFile = @"С:\DataSprint5\OutPutDataFileTask7V30.txt";
-
+            string path = Path.Combine(@"C:\DataSprint5", "InPutDataFileTask7V26.txt");
             Console.WriteLine($"Данные находятся в файле: {path}");
 
             Console.WriteLine();
@@ -35,8 +33,7 @@ namespace Tyuiu.DanilovAS.Sprint5.Task7.V30
             Console.WriteLine("***************************************************************************");
 
             Console.WriteLine("Находится в файле:");
-            pathSaveFile = ds.LoadDataAndSave(path);
-            Console.WriteLine(pathSaveFile);
+            Console.WriteLine(ds.LoadDataAndSave(path));
             Console.ReadKey();
         }
     }
