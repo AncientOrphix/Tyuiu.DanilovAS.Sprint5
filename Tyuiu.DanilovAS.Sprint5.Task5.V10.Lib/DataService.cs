@@ -19,7 +19,7 @@ namespace Tyuiu.DanilovAS.Sprint5.Task5.V10.Lib
                     {
                         double lineParse = double.Parse(number);
 
-                        if(Math.Round(lineParse) %2== 0)
+                        if(lineParse %2== 0)
                         {
                             res += lineParse;
                         }
