@@ -14,9 +14,9 @@ namespace Tyuiu.DanilovAS.Sprint5.Task5.V10.Lib
                 while ((line = reader.ReadLine()) != null)
                 {
                     string[] numbers = line.Split(' ');
-                    if (Convert.ToDouble(line) %2.0 == 0)
+                    if (Convert.ToDouble(numbers) %2.0 == 0)
                     {
-                        res = res + Convert.ToDouble(line);
+                        res = res + Convert.ToDouble(numbers);
                     }
                 }
             }
