@@ -24,11 +24,6 @@ namespace Tyuiu.DanilovAS.Sprint5.Task5.V10.Lib
                             res += lineParse;
                         }
                     }
-
-                   // if (Math.Round(Convert.ToDouble(lineArray)) % 2.0 == 0)
-                    //{
-                     //   res += Convert.ToDouble(lineArray);
-                    //}
                 } 
             }
             return Math.Round(res,3);
