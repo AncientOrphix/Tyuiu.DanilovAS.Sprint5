@@ -13,10 +13,12 @@ namespace Tyuiu.DanilovAS.Sprint5.Task6.V2.Lib
                  
                 while ((line = reader.ReadLine()) != null)
                 {
+                    line = line.ToUpper();
                     for(int i = 0; i < line.Length; i++)
                     {
+                        char c = line[i];
                         //string russian = @"^[А-Яа-яЁё]+$";
-                        if ((line[i] >= 'A') && (line[i] <= 'Я') || ((line[i] >= 'а') && (line[i] >= 'я')))
+                        if ((c >= 'A') && (c <= 'Я'))
                         {
                             count++;
                         }
