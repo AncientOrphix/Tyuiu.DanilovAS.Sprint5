@@ -15,7 +15,7 @@ namespace Tyuiu.DanilovAS.Sprint5.Task5.V10.Lib
                     string newLine = line.Replace('.', ',');
                     if (Convert.ToDouble(newLine) % 2 == 0)
                     {
-                        res = res + Convert.ToDouble(newLine);
+                        res = res + Math.Round(Convert.ToDouble(newLine),3);
                     }
                 }
             } 
