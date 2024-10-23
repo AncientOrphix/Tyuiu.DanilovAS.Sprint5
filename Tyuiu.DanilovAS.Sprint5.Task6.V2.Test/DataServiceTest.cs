@@ -22,10 +22,11 @@ namespace Tyuiu.DanilovAS.Sprint5.Task6.V2.Test
         public void ValidCalc()
         {
             DataService ds = new DataService();
+
             string path = @"C:\DataSprint5\InPutDataFileTask6V2.txt";
 
             var res = ds.LoadFromDataFile(path);
-            int wait = 0;
+            int wait = 3;
             Assert.AreEqual(wait, res);
         }
 
