@@ -1,4 +1,5 @@
-﻿using tyuiu.cources.programming.interfaces.Sprint5;
+﻿using System.Text.RegularExpressions;
+using tyuiu.cources.programming.interfaces.Sprint5;
 
 namespace Tyuiu.DanilovAS.Sprint5.Task7.V30.Lib
 {
@@ -27,7 +28,7 @@ namespace Tyuiu.DanilovAS.Sprint5.Task7.V30.Lib
                     {
                         if ((line[i] >= '0') && (line[i] < '9'))
                         {
-                            strLine += '9';
+                            strLine += Regex.Replace(Convert.ToString(line[i]), @"\b[0-9]\b", "9");
                         }
                         else
                         {
