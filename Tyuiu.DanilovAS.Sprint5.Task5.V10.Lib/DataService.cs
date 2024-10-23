@@ -19,6 +19,7 @@ namespace Tyuiu.DanilovAS.Sprint5.Task5.V10.Lib
                     }
                 }
             } 
+
             return Math.Round(res,3);
         }
     }
