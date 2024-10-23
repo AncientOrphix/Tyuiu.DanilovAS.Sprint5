@@ -25,20 +25,6 @@ namespace Tyuiu.DanilovAS.Sprint5.Task7.V30.Lib
                 while ((line = reader.ReadLine()) != null)
                 {
                     strLine = Regex.Replace(line, @"\b[0-9]\b", "9");
-
-
-                   // for (int i = 0; i < line.Length; i++)
-                    //{
-                      //  if ((line[i] >= '0') && (line[i] < '9'))
-                        //{
-                          //  strLine += '9';
-                        //}
-                        //else
-                        //{
-                         //   strLine += line[i];
-                        //}
-                    //}
-
                     File.AppendAllText(pathSaveFile,strLine + Environment.NewLine);
                     strLine = "";
                 }

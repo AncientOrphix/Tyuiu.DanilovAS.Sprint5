@@ -34,7 +34,7 @@ namespace Tyuiu.DanilovAS.Sprint5.Task7.V30
 
             Console.WriteLine("Находится в файле:");
             Console.WriteLine(ds.LoadDataAndSave(path));
-            Console.ReadKey();
+            Console.ReadKey(); 
         }
     }
 }
