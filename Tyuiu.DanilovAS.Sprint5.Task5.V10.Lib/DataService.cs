@@ -19,7 +19,7 @@ namespace Tyuiu.DanilovAS.Sprint5.Task5.V10.Lib
                         res += Convert.ToDouble(lineArray);
                     }
                 } 
-            } 
+            }
             return Math.Round(res,3);
         }
     }
