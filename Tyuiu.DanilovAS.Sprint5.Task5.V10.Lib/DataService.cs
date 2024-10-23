@@ -14,10 +14,21 @@ namespace Tyuiu.DanilovAS.Sprint5.Task5.V10.Lib
                 {
                     string lineReplace = line.Replace('.', ',');
                     string[] lineArray = lineReplace.Split(' ');
-                    if (Math.Round(Convert.ToDouble(lineArray)) % 2.0 == 0)
+
+                    foreach(string number in lineArray)
                     {
-                        res += Convert.ToDouble(lineArray);
+                        double lineParse = double.Parse(number);
+
+                        if(Math.Round(lineParse) %2== 0)
+                        {
+                            res += lineParse;
+                        }
                     }
+
+                   // if (Math.Round(Convert.ToDouble(lineArray)) % 2.0 == 0)
+                    //{
+                     //   res += Convert.ToDouble(lineArray);
+                    //}
                 } 
             }
             return Math.Round(res,3);
