@@ -18,7 +18,7 @@ namespace Tyuiu.DanilovAS.Sprint5.Task5.V10.Lib
                         res = res + Convert.ToDouble(newLine);
                     }
                 }
-            }
+            } 
             return res;
         }
     }
