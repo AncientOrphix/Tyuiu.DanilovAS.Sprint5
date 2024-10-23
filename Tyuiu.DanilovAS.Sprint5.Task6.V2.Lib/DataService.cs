@@ -14,8 +14,7 @@ namespace Tyuiu.DanilovAS.Sprint5.Task6.V2.Lib
                 {
                     for(int i = 0; i < line.Length; i++)
                     {
-                        //string russian = @"^[А-Яа-яЁё]+$";
-                        if (((line[i] >='A') && (line[i] <='я')) || line[i]=='Ё' || line[i]=='ё')
+                        if (line[i]>='А' && line[i] <='Я' || line[i] >='а' && line[i] <='я')
                         {
                             count++;
                         }
