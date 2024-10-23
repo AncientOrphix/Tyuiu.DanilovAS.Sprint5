@@ -25,9 +25,13 @@ namespace Tyuiu.DanilovAS.Sprint5.Task7.V30.Lib
                 {
                     for(int i = 0; i < line.Length; i++)
                     {
-                        if ((line[i] > 0) && (line[i] <=9))
+                        if ((line[i] >= '0') && (line[i] < '9'))
                         {
-                            strLine = "9";
+                            strLine += '9';
+                        }
+                        else
+                        {
+                            strLine += line[i];
                         }
                     }
 
