@@ -18,7 +18,7 @@ namespace Tyuiu.DanilovAS.Sprint5.Task6.V2.Lib
                     {
                         char c = line[i];
                         //string russian = @"^[А-Яа-яЁё]+$";
-                        if ((c >= 'A') && (c <= 'Я'))
+                        if ((c >= 'A') || (c <= 'Я'))
                         {
                             count++;
                         }
