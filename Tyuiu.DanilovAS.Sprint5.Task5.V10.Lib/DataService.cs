@@ -15,11 +15,11 @@ namespace Tyuiu.DanilovAS.Sprint5.Task5.V10.Lib
                     string newLine = line.Replace('.', ',');
                     if (Convert.ToDouble(newLine) % 2 == 0)
                     {
-                        res = res + Math.Round(Convert.ToDouble(newLine),3);
+                        res = res + Convert.ToDouble(newLine);
                     }
                 }
             } 
-            return res;
+            return Math.Round(res,3);
         }
     }
 }
