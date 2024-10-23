@@ -24,7 +24,7 @@ namespace Tyuiu.DanilovAS.Sprint5.Task7.V30.Lib
                 string? line = "";
                 while ((line = reader.ReadLine()) != null)
                 {
-                    strLine = Regex.Replace(line, @"\b[0-9]\b", "9")
+                    strLine = Regex.Replace(line, @"\b[0-9]\b", "9");
 
 
                    // for (int i = 0; i < line.Length; i++)
