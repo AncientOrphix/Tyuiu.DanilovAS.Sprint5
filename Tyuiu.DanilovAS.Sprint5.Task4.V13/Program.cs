@@ -17,7 +17,7 @@ namespace Tyuiu.DanilovAS.Sprint5.Task4.V13
             Console.WriteLine("* Выполнил: Данилов Александр Сергеевич |  ИИПб-24-2                      *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Дан файл С:\\DataSprint5\\InPutDataFileTask4V0.txt. Прочитать значение  *");
+            Console.WriteLine("* Дан файл С:\\DataSprint5\\InPutDataFileTask4V13.txt. Прочитать значение  *");
             Console.WriteLine("* из файла и подставить вместо Х в формуле. Вычислить значение по формуле *");
             Console.WriteLine("* Округлить до трёх знаков после запятой и вернуть результат на консоль   *");
             Console.WriteLine("***************************************************************************");
