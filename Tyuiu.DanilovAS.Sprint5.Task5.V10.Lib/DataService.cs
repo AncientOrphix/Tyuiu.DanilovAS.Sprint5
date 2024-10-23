@@ -12,15 +12,14 @@ namespace Tyuiu.DanilovAS.Sprint5.Task5.V10.Lib
                 string? line;
                 while ((line = reader.ReadLine()) != null)
                 {
-                    string newLine = line.Replace('.', ',');
-                    Console.WriteLine(double.Parse(newLine) % 2.0);
-                    if (Math.Round(Convert.ToDouble(newLine)) % 2.0 == 0)
+                    string lineReplace = line.Replace('.', ',');
+                    string[] lineArray = lineReplace.Split(' ');
+                    if (Math.Round(Convert.ToDouble(lineArray)) % 2.0 == 0)
                     {
-                        res += Convert.ToDouble(newLine);
+                        res += Convert.ToDouble(lineArray);
                     }
                 }
             } 
-
             return Math.Round(res,3);
         }
     }
